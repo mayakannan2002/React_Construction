@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 30px;
+  box-shadow: 5ch;
+}
+
+.card {
+  flex: 1 1 18rem;
+  max-width: 18rem;
+  transition: transform 0.1s ease, box-shadow 0.1s ease; }
+
+.card:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.product-title {
+  padding: 0px;
+  font-family: fantasy;
+  letter-spacing: 1px;
+  margin-left: 100px;
+  padding-top: 0;
+}

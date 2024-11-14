@@ -1,0 +1,88 @@
+/* General reset and layout for the header */
+.header {
+    padding: 20px 90px 20px 90px; /* Fix padding syntax */
+   
+    top: 0;
+    left: 0;
+    right:0 ;
+    
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:darkcyan;
+    color: white;
+}
+
+
+
+
+/* Navigation bar layout */
+.navbar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding:15px;
+    margin: 0;
+}
+
+/* Navigation items styling */
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-item i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+
+
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    justify-content: right;
+}
+
+.search-input {
+    padding: 6px 6px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    outline: none;
+    width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #4CAF50;
+}
+
+.search-button {
+    padding: 6px 6px;
+    background-color:white;
+    color: black;
+    font-size: 16px;
+    border:2px solid #000000;
+    border-radius: 4px;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color:cornflowerblue;
+}
+.logo{
+    right: 50px;
+}

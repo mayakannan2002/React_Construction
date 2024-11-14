@@ -1,0 +1,41 @@
+/* Slider.css */
+
+/* Carousel container - full width */
+.carousel {
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+  
+  /* Carousel images */
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Controls styling */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-size: 50%;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Hide visually hidden elements */
+  .visually-hidden {
+    display: none;
+  }
+  .carousel{
+    background-color: white;
+  }
+  
