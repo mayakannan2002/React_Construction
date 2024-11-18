@@ -1,7 +1,7 @@
 /* General reset and layout for the header */
 .header {
     padding: 20px 90px 20px 90px; /* Fix padding syntax */
-   
+   position:fixed;
     top: 0;
     left: 0;
     right:0 ;
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:darkcyan;
+    background-color :black;
     color: white;
 }
 
@@ -43,10 +43,6 @@
 .nav-item i {
     margin-right: 8px; /* Space between icon and text */
 }
-
-
-
-
 /* Search bar styling */
 .search-bar {
     display: flex;
@@ -66,13 +62,13 @@
 }
 
 .search-input:focus {
-    border-color: #4CAF50;
+    border-color:gray;
 }
 
 .search-button {
     padding: 6px 6px;
-    background-color:white;
-    color: black;
+    background-color:rgb(7, 7, 7);
+    color: white;
     font-size: 16px;
     border:2px solid #000000;
     border-radius: 4px;
@@ -81,8 +77,9 @@
 }
 
 .search-button:hover {
-    background-color:cornflowerblue;
+    background-color:rgb(235, 237, 241);
 }
 .logo{
     right: 50px;
+    color: white;
 }

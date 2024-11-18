@@ -12,13 +12,13 @@ const Product = () => {
     <div className="product-section">
       {/* Header Section */}
       <h2 className="product-title">BUILDING DETAILS</h2>
-    <div className='container'><div className="card" style={{width: '18rem'}}>
+    <div className='containers'><div className="card" style={{width: '18rem'}}>
     
     <img src={Nature_1} className="card-img-top" alt="..."/>
     <div class="card-body">
       <h5 class="card-title">Virtue Royal City</h5>
       <p class="card-text"><i className='fas fa-location'></i> Sarjapura, Bangalore</p>
-      <a href="#" class="btn btn-primary">More Details</a>
+      <a href="/card-details1" class="btn btn-primary">More Details</a>
     </div>
   </div>
   <div className="card" style={{width: '18rem'}}>
@@ -26,7 +26,7 @@ const Product = () => {
     <div class="card-body">
       <h5 class="card-title">Virtue Royal Nisarga</h5>
       <p class="card-text"><i className='fas fa-location'></i> Kengeri, Bangalore</p>
-      <a href="#" class="btn btn-primary">More Details</a>
+      <a href="/card-details2" class="btn btn-primary">More Details</a>
     </div>
   </div>
   <div className="card" style={{width: '18rem'}}>
@@ -34,7 +34,7 @@ const Product = () => {
     <div class="card-body">
       <h5 class="card-title">Virtue Eshas Courtyard</h5>
       <p class="card-text"><i className='fas fa-location'></i> Sarjapura, Bangalore</p>
-      <a href="#" class="btn btn-primary">More Details</a>
+      <a href="/card-details3" class="btn btn-primary">More Details</a>
     </div>
   </div>
   <div className="card" style={{width: '18rem'}}>
@@ -42,7 +42,7 @@ const Product = () => {
     <div class="card-body">
       <h5 class="card-title">Virtue Royal City</h5>
       <p class="card-text"><i className='fas fa-location'></i> Kengeri, Bangalore</p>
-      <a href="#" class="btn btn-primary">More Details</a>
+      <a href="/card-details4" class="btn btn-primary">More Details</a>
     </div>
   </div>
   </div>

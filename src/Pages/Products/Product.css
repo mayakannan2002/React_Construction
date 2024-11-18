@@ -1,19 +1,22 @@
-.container {
+.containers {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 30px;
+  padding: 50px;
+  padding-left: 80px;
   box-shadow: 5ch;
+  margin-left: 100px;
 }
 
 .card {
-  flex: 1 1 18rem;
-  max-width: 18rem;
+  flex: 1 1 20rem;
+  max-width: 20rem;
   transition: transform 0.1s ease, box-shadow 0.1s ease; }
 
 .card:hover {
   transform: scale(1.1); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
+  
 }
 
 .product-title {

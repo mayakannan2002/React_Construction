@@ -1,41 +1,54 @@
-/* Slider.css */
-
-/* Carousel container - full width */
+/* Carousel container - full width and centered */
 .carousel {
-    width: 100%;
-    margin: auto;
-    position: relative;
-  }
-  
-  /* Carousel images */
-  .carousel-inner img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  /* Controls styling */
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    background-size: 50%;
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  /* Hide visually hidden elements */
-  .visually-hidden {
-    display: none;
-  }
-  .carousel{
-    background-color: white;
-  }
-  
+  width: 100%;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden; 
+  margin-bottom: 0px;
+}
+
+/* Carousel images */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures images cover the carousel container without distortion */
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Add a light shadow to the carousel */
+.carousel-inner {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Controls styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-size: 50%;
+}
+
+/* Position controls */
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Visually hidden elements (for screen readers) */
+.visually-hidden {
+  display: none;
+}
+
+/* Additional styling for carousel */
+.carousel {
+  background-color: #f8f8f8;
+}
+
+/* Smooth transition for carousel */
+.carousel-inner {
+  transition: transform 0.2s ease; }
