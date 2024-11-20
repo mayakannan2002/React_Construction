@@ -1,28 +1,86 @@
-.containers {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 50px;
-  padding-left: 80px;
-  box-shadow: 5ch;
-  margin-left: 100px;
-}
-
-.card {
-  flex: 1 1 20rem;
-  max-width: 20rem;
-  transition: transform 0.1s ease, box-shadow 0.1s ease; }
-
-.card:hover {
-  transform: scale(1.1); 
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
-  
+/* Product Section Styles */
+.product-section {
+  padding: 2rem;
+  background-color: white;
+  text-align: left;
+  margin-left: 120px;
+  margin-right: 100px;
 }
 
 .product-title {
-  padding: 0px;
-  font-family: fantasy;
-  letter-spacing: 1px;
-  margin-left: 100px;
-  padding-top: 0;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Smooth zoom on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  border-color: #007bff; /* Border highlights on hover */
+}
+
+.product-card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-card-body {
+  padding: 1rem;
+}
+
+.product-card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.product-card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.product-card-text .fas {
+  margin-right: 0.5rem;
+  color: #007bff;
+}
+
+.product-btn-primary {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

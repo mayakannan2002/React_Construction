@@ -29,6 +29,7 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   font-size: 1.1rem;
   color: #333;
+  margin-top: 150px
 }
 
 /* Image Styling */
@@ -67,6 +68,8 @@ h3 {
 /* Large Image Section */
 .large-image-section {
   margin-bottom: 20px;
+  margin-top: 150px;
+
 }
 
 .large-image {

@@ -1,50 +1,44 @@
-/* Container for the testimonials */
-.testimonial-paragraphs {
-    width: 100%;
-    text-align: center;
-    padding-left: 110px;
-    padding-right: 110px;
-   
-  }
-  
-  /* Flexbox for arranging items in rows */
-  .testimonial-row {
-    padding: 50px,10px,10px,10px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px; /* Space between rows */
-  }
-  
-  /* Each testimonial item styling */
-  .testimonial-item {
-    width: 48%; /* Adjust width to fit two testimonials in one row */
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 2px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  /* Styling for testimonial text */
-  .testimonial-item p {
-    font-style: italic;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  /* Styling for the name of the person giving the testimonial */
-  .testimonial-item h5 {
-    margin-top: 5px;
-    font-weight: bold;
-    color: #333;
-  }
+.testimonial-section {
+  padding: 2rem;
+  background-color:white;
+  text-align: left;
+  margin-left: 120px;
+  margin-right: 100px;
+}
 
-  .product-titleS{
-    padding:0px;
-    font-family:fantasy;
-    letter-spacing: 1px;
-    margin-left: 100px;
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 cards per row */
+  gap: 1.5rem;
+  padding: 1rem;
+}
 
-  }
-  
-  
+.testimonial-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.testimonial-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.testimonial-card .designation {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card .message {
+  font-style: italic;
+}

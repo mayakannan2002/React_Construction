@@ -1,54 +1,90 @@
-/* Carousel container - full width and centered */
-.carousel {
-  width: 100%;
-  margin: auto;
+/* Slider.css */
+
+/* Slider container */
+.slider {
+  width: 100%; /* Full width */
+  overflow: hidden;
   position: relative;
-  border-radius: 10px;
-  overflow: hidden; 
-  margin-bottom: 0px;
+  margin-top: 100px;
 }
 
-/* Carousel images */
-.carousel-inner img {
+/* Slides container */
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 15s infinite linear; /* Adjust the duration to control speed */
+}
+
+/* Individual slide */
+.slide {
+  min-width: 100%; /* Ensure slides take full width */
+  transition: transform 3s ease-in-out;
+}
+
+/* Slide image */
+.slide img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures images cover the carousel container without distortion */
-  border-radius: 10px; /* Rounded corners for images */
+  object-fit: cover;
 }
 
-/* Add a light shadow to the carousel */
-.carousel-inner {
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+/* Keyframes for sliding effect */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+ /* Adjust to 200% */
+  }
+  70% {
+    transform: translateX(-200%);
+  }
 }
 
-/* Controls styling */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  background-size: 50%;
-}
-
-/* Position controls */
+/* Arrow buttons */
 .carousel-control-prev,
 .carousel-control-next {
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
-/* Visually hidden elements (for screen readers) */
-.visually-hidden {
-  display: none;
+.carousel-control-prev {
+  left: 20px;
 }
 
-/* Additional styling for carousel */
-.carousel {
-  background-color: #f8f8f8;
+.carousel-control-next {
+  right: 20px;
 }
 
-/* Smooth transition for carousel */
-.carousel-inner {
-  transition: transform 0.2s ease; }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"><path d="M11.354 1.146a.5.5 0 0 0 0 .708L6.707 6.5l4.647 4.646a.5.5 0 0 0 .708-.708l-5-5a.5.5 0 0 0-.708 0l-5 5a.5.5 0 1 0 .708.708L5.5 6.707l4.646-4.647a.5.5 0 0 0-.708-.708L6 6.293 1.354 1.646a.5.5 0 1 0-.708.708l5 5a.5.5 0 0 0 .708 0l5-5a.5.5 0 0 0-.708-.708l-5-5z"/></svg>');
+}
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"><path d="M4.646 1.146a.5.5 0 0 1 0 .708L9.293 6.5l-4.647 4.646a.5.5 0 0 1-.708-.708l5-5a.5.5 0 0 1 .708 0l5 5a.5.5 0 1 1-.708.708L10.5 6.707l-4.646 4.647a.5.5 0 0 1-.708-.708l5-5a.5.5 0 0 1 .708 0l5 5a.5.5 0 1 1-.708.708L10.5 6.707l-4.646-4.647a.5.5 0 0 1-.708-.708l5-5a.5.5 0 0 1 .708 0l5 5a.5.5 0 1 1-.708-.708L10.5 6.707l-4.646 4.647a.5.5 0 1 1-.708-.708l5-5a.5.5 0 0 1-.708 0z"/></svg>');
+}

@@ -1,12 +1,14 @@
 import React from 'react';
 import './Header.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import logo from "./../../assets/image/logo-small.png"
 
 const Header = () => {
     return (
         <div className='header'>
-        
+        <div> <img className='logo' src={logo} alt="Logo of company" /></div>
             <div className='logo'>
+           
                 <h1><b>VIRTUE BUILDERS</b></h1>
             </div><br />
 
