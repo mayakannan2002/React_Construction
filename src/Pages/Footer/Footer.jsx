@@ -1,11 +1,11 @@
 import React from 'react';
-import './Footer.css'; // Import the CSS file
+import './Footer.css'; 
 import logo from "./../../assets/image/logo-small.png"
 
 function Footer() {
   return (
     <footer className="footer">
-      {/* Left Section */}
+
       <div className='logosection'>
         
         <img className='logos' src={logo} alt="Logo of company" />
@@ -20,7 +20,7 @@ function Footer() {
         
       </div>
 
-      {/* Center Section */}
+     
       <div className="footer-section">
         <h3>Follow Us</h3>
         <div>
@@ -38,7 +38,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* Right Section */}
       <div className="footer-section">
         <h3>Contact Us</h3>
         <address>

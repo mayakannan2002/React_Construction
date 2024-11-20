@@ -1,4 +1,4 @@
-/* Product Section Styles */
+
 .product-section {
   padding: 2rem;
   background-color: white;
@@ -34,9 +34,9 @@
 }
 
 .product-card:hover {
-  transform: scale(1.05); /* Smooth zoom on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
-  border-color: #007bff; /* Border highlights on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
 }
 
 .product-card-img {

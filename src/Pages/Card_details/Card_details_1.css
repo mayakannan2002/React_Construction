@@ -55,17 +55,17 @@ h3 {
   margin-top: 20px;
 }
 
-/* Product Preview Container */
+
 .product-preview-container {
-  order: 2; /* Ensure product-preview-container is on the right */
+  order: 2;
   display: flex;
-  flex-direction: column; /* Stack the preview images vertically */
+  flex-direction: column;
   align-items: center;
-  width: 40%; /* Restrict to 40% width */
+  width: 40%; 
   margin-top: 70px;
 }
 
-/* Large Image Section */
+
 .large-image-section {
   margin-bottom: 20px;
   margin-top: 150px;
@@ -80,7 +80,7 @@ h3 {
   transition: transform 0.2s ease-in-out;
 }
 
-/* Thumbnail Images Section */
+
 .thumbnail-section {
   display: flex;
   gap: 15px;
@@ -96,10 +96,10 @@ h3 {
 }
 
 .thumbnail:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1);
 }
 
-/* Optional: Active state for selected thumbnail */
+
 .thumbnail.selected {
-  border: 3px solid #e63946; /* Highlight the selected thumbnail */
+  border: 3px solid #e63946;
 }

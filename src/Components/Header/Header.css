@@ -1,29 +1,26 @@
-/* General reset and layout for the header */
+
 .header {
-    padding: 20px 90px 20px 90px; /* Fix padding syntax */
+    padding: 20px 90px 20px 90px;
    position:fixed;
     top: 0;
     left: 0;
     right:0 ;
-    border-radius: 10px; /* Adjust the radius as needed */
-    box-shadow: 5px 5px 5px rgba(12, 10, 10, 0.1); /* Light gray shadow */
-    background-color: white; /* Light gray background */
+    border-radius: 10px; 
+    box-shadow: 5px 5px 5px rgba(12, 10, 10, 0.1);
+    background-color:rgb(238, 229, 229); 
     
     
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:white;
+
     color: white;
    border-radius: 5px solid rgb(116, 114, 114);
    
 }
 
 
-
-
-/* Navigation bar layout */
 .navbar {
     flex-grow: 1;
     display: flex;
@@ -39,7 +36,6 @@
    
 }
 
-/* Navigation items styling */
 .nav-item {
     text-decoration: none;
     color:black;
@@ -48,9 +44,9 @@
 }
 
 .nav-item i {
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 8px; 
 }
-/* Search bar styling */
+
 .search-bar {
     display: flex;
     align-items: center;

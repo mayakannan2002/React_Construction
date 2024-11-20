@@ -1,10 +1,9 @@
-/* footer.css */
 
 .footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color:white;
+    background-color:rgb(238, 229, 229);
     color: rgb(12, 12, 12);
     text-align: center;
     box-shadow: 5px 5px 5px 5px rgba(12, 10, 10, 0.2);

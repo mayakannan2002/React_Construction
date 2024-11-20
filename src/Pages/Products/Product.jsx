@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-// Importing images
+
 import Nature_1 from '../../assets/image/N1.jpg';
 import Nature_2 from '../../assets/image/N2.jpg';
 import Nature_3 from '../../assets/image/N3.jpg';
