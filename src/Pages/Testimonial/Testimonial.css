@@ -1,14 +1,14 @@
 .testimonial-section {
   padding: 2rem;
-  background-color:white;
+  background-color: white;
   text-align: left;
-  margin-left: 120px;
-  margin-right: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr); /* Four columns for large screens */
   gap: 1.5rem;
   padding: 1rem;
 }
@@ -41,4 +41,67 @@
 
 .testimonial-card .message {
   font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    gap: 1rem;
+  }
+
+  .testimonial-section {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .testimonial-card {
+    padding: 1rem;
+  }
+
+  .testimonial-card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .testimonial-card h3 {
+    font-size: 1rem;
+  }
+
+  .testimonial-card .designation {
+    font-size: 0.8rem;
+  }
+
+  .testimonial-card .message {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr; /* One column for small screens */
+  }
+
+  .testimonial-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonial-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-card .designation {
+    font-size: 0.7rem;
+  }
+
+  .testimonial-card .message {
+    font-size: 0.8rem;
+  }
 }

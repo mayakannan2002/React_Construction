@@ -1,41 +1,92 @@
+/* Footer.css */
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color:rgb(238, 229, 229);
-    color: rgb(12, 12, 12);
-    text-align: center;
-    box-shadow: 5px 5px 5px 5px rgba(12, 10, 10, 0.2);
-   
-  }
-  
-  .footer-section {
-    flex: 1;
-    margin: 0 20px;
-    font-size:x-large;
-   
-    margin-right: 70px;
-  }
-  
-  .footer a {
-    color: rgb(12, 12, 12);
-    text-decoration: none;
-    margin: 0 5px;
-    font-size:x-large;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+.footer-logo-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 150px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-links, .footer-contact, .footer-social {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footer-links h4, .footer-contact h4, .footer-social h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #007bff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-contact p, .footer-social .social-icons a {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-social .social-icons a {
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      align-items: flex-start;
   }
 
-  .logos{
-    text-align: center;
-    padding-top: 30px;
-    margin-left: 70px;
+  .footer-logo-section {
+      margin-bottom: 20px;
   }
-  .logosection{
-    padding-top: 0px;
-    color:black;
+
+  .footer-links, .footer-contact, .footer-social {
+      margin-bottom: 20px;
   }
-  
+}

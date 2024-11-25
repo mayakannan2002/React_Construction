@@ -3,7 +3,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 
@@ -85,3 +85,36 @@
 .carousel-control-next-icon {
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"><path d="M4.646 1.146a.5.5 0 0 1 0 .708L9.293 6.5l-4.647 4.646a.5.5 0 0 1-.708-.708l5-5a.5.5 0 0 1 .708 0l5 5a.5.5 0 1 1-.708.708L10.5 6.707l-4.646 4.647a.5.5 0 0 1-.708-.708l5-5a.5.5 0 0 1 .708 0l5 5a.5.5 0 1 1-.708.708L10.5 6.707l-4.646-4.647a.5.5 0 0 1-.708-.708l5-5a.5.5 0 0 1 .708 0l5 5a.5.5 0 1 1-.708-.708L10.5 6.707l-4.646 4.647a.5.5 0 1 1-.708-.708l5-5a.5.5 0 0 1-.708 0z"/></svg>');
 }
+
+.banner{
+  margin-top: 18px;
+}
+.banner {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+.banner h1 {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 10s linear infinite; /* Key to enable movement */
+  margin: 0;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
+

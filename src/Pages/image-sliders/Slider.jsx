@@ -27,36 +27,41 @@ export const Slider = () => {
   }, []);
 
   return (
-    <div className="slider">
-      <div className="slides" ref={slidesRef}>
-        <div className="slide">
-          <img src={image} className="d-block w-100" alt="Slide 1" />
-        </div>
-        <div className="slide">
-          <img src={image_1} className="d-block w-100" alt="Slide 2" />
-        </div>
-        <div className="slide">
-          <img src={image_2} className="d-block w-100" alt="Slide 3" />
-        </div>
+    <div>
+      <div className="banner">
+        <h1>WELCOME TO VIRTUE BUILDERS!</h1>
       </div>
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
+      <div className="slider">
+        <div className="slides" ref={slidesRef}>
+          <div className="slide">
+            <img src={image} className="d-block w-100" alt="Slide 1" />
+          </div>
+          <div className="slide">
+            <img src={image_1} className="d-block w-100" alt="Slide 2" />
+          </div>
+          <div className="slide">
+            <img src={image_2} className="d-block w-100" alt="Slide 3" />
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
   );
 };
