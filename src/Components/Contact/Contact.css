@@ -19,14 +19,14 @@
   .left-image {
     margin-right: 20px;
     background-color: #f9f9f9;
-   
+    height: 100vh;
     width: 20%;
   }
   
   .right-image {
     margin-left: 20px;
     background-color: #f9f9f9;
-   
+    height: 100vh;
     width: 20%;
   }
   
@@ -175,15 +175,4 @@
     .right-image {
         display: none; /* Hide side images on mobile */
     }
-
-    .contact-form-container {
-        margin-top: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f9f9f9;
-        width: 100vw;
-      }
-      
-}
+  }

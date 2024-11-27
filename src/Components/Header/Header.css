@@ -104,6 +104,12 @@
 /* Responsive Design */
 @media (max-width: 768px) {
 
+
+    .header {
+       width: 100%;
+    }
+    
+
     .logo {
         width: 90px;
         height: 60px;
