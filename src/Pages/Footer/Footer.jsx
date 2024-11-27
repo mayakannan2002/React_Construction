@@ -1,21 +1,21 @@
 import React from 'react';
 import './Footer.css';
-import logo from "./../../assets/image/logo-small.png";
+import logo from "./../../assets/image/v logo.jpeg";
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-logo-section">
                 <img src={logo} alt="Logo" className="footer-logo" />
-                <p className="footer-title">VIRTUE BUILDERS</p>
+              
             </div>
             <div className="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="\">Home</a></li>
+                    <li><a href="/About">About</a></li>
+                    <li><a href="/Product">Products</a></li>
+                    <li><a href="/Contact">Contact</a></li>
                 </ul>
             </div>
             <div className="footer-contact">

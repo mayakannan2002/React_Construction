@@ -15,7 +15,7 @@ const CardDetails1 = () => {
   return (
     <div className="container"> 
       <div className="content-section">
-        <h2 className="heading"><b>Building Areas and Prices</b></h2>
+        <h2 className="headings"><b>Building Areas and Prices</b></h2>
         <p>We specialize in high-quality construction projects tailored to your needs. Our offerings include:</p>
         <ul>
           <li>Residential areas starting at ₹2,500/sq.ft</li>

@@ -22,15 +22,16 @@ const Header = () => {
             <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
                 <ul className="nav-list">
                     <li><a href="\">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div className="search-section">
+                    <li><a href="/About">About</a></li>
+                    <li><a href="/#product-page">Products</a></li>
+                    <li><a href="/Contact">Contact</a></li>
+                     <div className="search-section">
                 <input type="text" placeholder="Search..." className="search-box" />
                 <button className="search-button">Search</button>
             </div>
+                </ul>
+            </nav>
+           
         </header>
        
     

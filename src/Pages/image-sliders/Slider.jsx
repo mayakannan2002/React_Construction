@@ -28,10 +28,12 @@ export const Slider = () => {
 
   return (
     <div>
-      <div className="banner">
-        <h1>WELCOME TO VIRTUE BUILDERS!</h1>
-      </div>
+         <div className="marqueecss">
+         <marquee><b></b>WELCOME TO VIRTUE BUILDERS!!!</marquee>
+         </div>
+      
       <div className="slider">
+
         <div className="slides" ref={slidesRef}>
           <div className="slide">
             <img src={image} className="d-block w-100" alt="Slide 1" />

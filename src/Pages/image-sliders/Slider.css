@@ -1,9 +1,10 @@
-
 .slider {
   width: 100%;
   overflow: hidden;
   position: relative;
   margin-top: 10px;
+ 
+
 }
 
 
@@ -88,6 +89,7 @@
 
 .banner{
   margin-top: 18px;
+  
 }
 .banner {
   overflow: hidden;
@@ -100,21 +102,42 @@
   text-align: center;
   padding: 10px 0;
   position: relative;
+  
 }
 
 .banner h1 {
   display: inline-block;
   white-space: nowrap;
-  animation: scrollText 10s linear infinite; /* Key to enable movement */
+  animation: scrollText 10s linear infinite;
   margin: 0;
-}
+  }
 
 @keyframes scrollText {
   0% {
-    transform: translateX(100%); /* Start off-screen to the right */
+    transform: translateX(100%); 
   }
   100% {
-    transform: translateX(-100%); /* End off-screen to the left */
+    transform: translateX(-100%); 
   }
 }
 
+
+
+.marqueecss{
+  background: linear-gradient(to right, black, skyblue);
+  margin-top:110px; 
+  background-color:white;
+  color:yellow;
+  font-size:50px;
+  
+}
+
+@media (max-width: 768px) {
+
+  .marqueecss{
+    margin-top:90px; 
+    background-color:white;
+    color:yellow;
+    font-size:30px;
+  }
+}

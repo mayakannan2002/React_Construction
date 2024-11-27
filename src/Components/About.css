@@ -1,0 +1,142 @@
+.about-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.heading {
+    margin-top: 90px;
+    text-align: center;
+    background: linear-gradient(to right, black, skyblue);
+    padding: 20px 0;
+    border-radius: 8px;
+}
+
+.heading-title {
+    font-size: 35px;
+    color: red;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.about-content {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Accordion Styles */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px; /* Reduced padding */
+    cursor: pointer;
+    background:white;
+    color: rgb(7, 7, 7);
+    font-size: 16px; /* Smaller font size */
+    font-weight: bold;
+    line-height: 1.2; /* Reduced line height */
+}
+
+.accordion-title.active {
+    background: skyblue;
+    color: black;
+}
+
+.accordion-title .arrow {
+    font-size: 14px; /* Smaller arrow */
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    padding: 10px 15px; /* Reduced padding */
+    background: #f9f9f9;
+    color: #333;
+    border-top: 1px solid #ddd;
+    font-size: 14px; /* Smaller font size */
+    line-height: 1.4; /* Adjusted line height */
+}
+
+/* General Styles for the Page */
+.about-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Two Columns Below Accordion */
+.additional-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content-left,
+.content-right {
+    flex: 1;
+    padding: 15px; /* Reduced padding */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.content-left h4,
+.content-right h4 {
+    font-size: 18px; /* Smaller heading font size */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-left p,
+.content-right p {
+    color: #555;
+    font-size: 14px; /* Smaller paragraph font size */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .accordion-title {
+        font-size: 14px; /* Adjust for smaller screens */
+    }
+
+    .accordion-content {
+        font-size: 12px; /* Adjust for smaller screens */
+    }
+
+    .additional-content {
+        flex-direction: column;
+    }
+
+    .content-left,
+    .content-right {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-left h4,
+    .content-right h4 {
+        font-size: 16px;
+    }
+}

@@ -7,18 +7,17 @@ import image3 from './../../assets/image/B3.jpeg';
 import './Card_details_1.css';
 
 const CardDetails1 = () => {
-  const [selectedImage, setSelectedImage] = useState(image); // State to manage the selected image
+  const [selectedImage, setSelectedImage] = useState(image);
 
   const handleImageClick = (imageSrc) => {
-    setSelectedImage(imageSrc);  // Update the large image when a small image is clicked
+    setSelectedImage(imageSrc);
   };
 
   return (
-    <div className="container">  {/* Added container class */}
-      {/* Right Content Section */}
+    <div className="container">
       <div className="content-section">
-        <h2 className="heading"><b>Building Areas and Prices</b></h2>
-        <p>We specialize in high-quality construction projects tailored to your needs. Our offerings include:</p>
+        <h2 className="headings"><b>Building Areas and Prices</b></h2>
+        <div className='con'><p>We specialize in high-quality construction projects tailored to your needs. Our offerings include:</p>
         <ul>
           <li>Residential areas starting at ₹2,500/sq.ft</li>
           <li>Commercial spaces starting at ₹3,000/sq.ft</li>
@@ -38,17 +37,14 @@ const CardDetails1 = () => {
           <li><strong>Residential Construction:</strong> Building dream homes with precision and excellence.</li>
           <li><strong>Commercial Construction:</strong> Designing and constructing office spaces, retail, and business hubs.</li>
           <li><strong>Custom Design & Build:</strong> Tailored designs for your unique needs and preferences.</li>
-        </ul>
+        </ul></div>
       </div>
 
-      {/* Product Preview Container */}
       <div className="product-preview-container">
-        {/* Large Image Section */}
         <div className="large-image-section">
           <img className="large-image" src={selectedImage} alt="Product Preview" />
         </div>
 
-        {/* Thumbnail Images Section */}
         <div className="thumbnail-section">
           <img
             className="thumbnail"

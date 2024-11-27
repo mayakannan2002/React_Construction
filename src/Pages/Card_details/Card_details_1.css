@@ -29,7 +29,8 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   font-size: 1.1rem;
   color: #333;
-  margin-top: 150px
+  margin-top: 120px;
+  margin-left:10px;
 }
 
 /* Image Styling */
@@ -42,11 +43,13 @@
 }
 
 /* Heading Styling */
-.heading {
-  font-size: 28px;
-  color: #e63946;
-  margin-bottom: 20px;
-  text-align: left; /* Align heading to the left */
+.headings {
+    
+    text-align:center;
+    background: linear-gradient(to right, black,skyblue );
+    padding: 20px 0;
+    border-radius: 8px;
+    color: red;
 }
 
 h3 {
@@ -62,19 +65,20 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 40%; 
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 
 .large-image-section {
   margin-bottom: 20px;
-  margin-top: 150px;
+  margin-top: 100px;
 
 }
 
 .large-image {
+  margin-top: 20px;
   width: 100%;
-  height: 400px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.2s ease-in-out;
@@ -102,4 +106,80 @@ h3 {
 
 .thumbnail.selected {
   border: 3px solid #e63946;
+}
+
+
+/* Media query for devices with max-width 768px */
+@media (max-width: 768px) {
+  /* Container Styling */
+  .container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+
+  /* Image Section */
+  .image-section {
+    order: 1; /* Move image section above content */
+    flex: 0 0 auto; /* Let the section size itself naturally */
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+
+  /* Content Section */
+  .content-section {
+    order: 2; /* Move content section below images */
+    width: 100%; /* Use full width */
+    padding: 20px;
+    margin-top: 100px; /* Reduce top margin */
+    font-size: 1rem; /* Adjust font size for readability */
+  }
+
+  /* Image Styling */
+  .image {
+    max-width: 100%; /* Allow images to scale down */
+  }
+
+  /* Heading Styling */
+  .heading {
+    font-size: 24px; /* Reduce heading size */
+    text-align: center; /* Center align for smaller screens */
+  }
+
+  h3 {
+    font-size: 20px; /* Adjust subheading size */
+    text-align: center;
+  }
+
+  /* Product Preview Container */
+  .product-preview-container {
+    width: 100%; /* Use full width */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Large Image Section */
+  .large-image-section {
+    margin-top: 20px; /* Reduce top margin */
+  }
+
+  .large-image {
+    height: auto; /* Let the image height adjust naturally */
+    max-height: 300px; /* Set a reasonable max height */
+  }
+
+  /* Thumbnail Section */
+  .thumbnail-section {
+    gap: 10px; /* Reduce spacing between thumbnails */
+    justify-content: center; /* Center align thumbnails */
+  }
+
+  .thumbnail {
+    width: 60px; /* Adjust thumbnail size */
+    height: 60px;
+  }
+
+  .thumbnail:hover {
+    transform: scale(1.05); /* Subtle hover effect for smaller screens */
+  }
 }

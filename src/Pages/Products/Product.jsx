@@ -37,9 +37,10 @@ const Product = () => {
   ];
 
   return (
-    <div className="product-section">
+    <div className="product-section" id='product-page' >
+      <div className="product-title "  id='product-page'><h2 >Building Details</h2></div>
+      
       {/* Header Section */}
-      <h2 className="product-title">Building Details</h2>
 
       {/* Card Section */}
       <div className="product-container">
