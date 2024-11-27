@@ -175,4 +175,14 @@
     .right-image {
         display: none; /* Hide side images on mobile */
     }
+
+    .contact-form-container {
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f9f9f9;
+        width: 100vw;
+      }
   }
