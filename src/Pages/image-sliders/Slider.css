@@ -125,7 +125,7 @@
 
 .marqueecss{
   background: linear-gradient(to right, black, skyblue);
-  margin-top:110px; 
+  margin-top:90px; 
   background-color:white;
   color:yellow;
   font-size:50px;
@@ -135,7 +135,7 @@
 @media (max-width: 768px) {
 
   .marqueecss{
-    margin-top:90px; 
+    margin-top:65px; 
     background-color:white;
     color:yellow;
     font-size:30px;

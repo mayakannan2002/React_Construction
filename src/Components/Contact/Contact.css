@@ -1,6 +1,6 @@
 /* Ensure the contact form covers the full screen */
 .contact-form-container {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,7 +189,7 @@
     }
 
     .contact-form-container {
-        margin-top: 150px;
+        margin-top: 50px;
         height: auto; /* Allow height to adjust to content */
         width: 100%; /* Ensure container fits within the viewport */
     }
