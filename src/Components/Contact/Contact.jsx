@@ -11,15 +11,15 @@ const ContactForm = () => {
     message: "",
   });
 
-  const [currentError, setCurrentError] = useState(""); // State to track the current error message
-  const [showModal, setShowModal] = useState(false); // State to control modal visibility
+  const [currentError, setCurrentError] = useState(""); 
+  const [showModal, setShowModal] = useState(false); 
 
   const validateForm = () => {
     if (!formData.name) return "Name is required";
     if (!formData.phone) return "Phone number is required";
     if (!formData.email) return "Email is required";
     if (!formData.message) return "Message is required";
-    return null; // No errors
+    return null; 
   };
 
   const handleChange = (e) => {
@@ -28,7 +28,7 @@ const ContactForm = () => {
       [e.target.name]: e.target.value,
     });
 
-    // Clear the current error if the user fixes it
+    
     if (currentError.includes(e.target.name)) {
       const nextError = validateForm();
       setCurrentError(nextError || "");
@@ -40,41 +40,42 @@ const ContactForm = () => {
     const error = validateForm();
 
     if (error) {
-      setCurrentError(error); // Show only the first error
+      setCurrentError(error);
     } else {
-      // If no errors, proceed with form submission
+      
       localStorage.setItem("contactFormData", JSON.stringify(formData));
-      setShowModal(true); // Show the modal on successful form submission
+      setShowModal(true); 
 
-      // Reset the form
+     
       setFormData({
         name: "",
         phone: "",
         email: "",
         message: "",
       });
-      setCurrentError(""); // Clear any remaining error
+      setCurrentError(""); 
     }
   };
 
-  // Close the modal
+
   const handleCloseModal = () => {
     setShowModal(false);
   };
 
   return (
     <div className="contact-form-container">
-      <img src={Nature1} alt="Left Side Image" className="side-image left-image" />
+      
       <div className="contact-form-content">
         <h2>
           Contact <span>Us</span>
         </h2>
         <p>
-          Connect with Virtue Builders: Expert construction, innovative designs, quality craftsmanship. Reach us for inquiries, collaborations, and project consultations.
+          Connect with Virtue Builders: Expert construction, innovative designs, quality craftsmanship. Reach us for inquiries, collaborations, and project consultations.Delivering excellence in every build, our team ensures personalized solutions and timely project completion tailored to your vision.
+          
         </p>
         <div className="contact-form-details">
           <div className="contact-detail">
-            <h3>Contact detail</h3>
+            <h3>Contact detail</h3><hr />
             <p>
               <strong>Connect with Virtue Builders</strong>
             </p>
@@ -86,6 +87,10 @@ const ContactForm = () => {
             </p>
             <p>
               <strong>ADDRESS:</strong> 6743 last street, Under bypepassroad,karnataka,Bengaluru
+            </p>
+            <hr />
+            <p>
+              <strong>ABOUT US:</strong> <br></br>Delivering excellence in every build, our team ensures personalized solutions and timely project completion tailored to your vision.
             </p>
           </div>
           <div className="contact-form">
@@ -151,7 +156,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      {/* Modal Popup */}
+      
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
@@ -163,7 +168,7 @@ const ContactForm = () => {
           </div>
         </div>
       )}
-      <img src={Nature2} alt="Right Side Image" className="side-image right-image" />
+      {/* <img src={Nature2} alt="Right Side Image" className="side-image right-image" /> */}
     </div>
   );
 };

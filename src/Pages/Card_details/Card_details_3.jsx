@@ -7,15 +7,14 @@ import image3 from './../../assets/image/B3.jpeg';
 import './Card_details_1.css';
 
 const CardDetails1 = () => {
-  const [selectedImage, setSelectedImage] = useState(image); // State to manage the selected image
+  const [selectedImage, setSelectedImage] = useState(image); 
 
   const handleImageClick = (imageSrc) => {
-    setSelectedImage(imageSrc);  // Update the large image when a small image is clicked
+    setSelectedImage(imageSrc);  
   };
 
   return (
-    <div className="container">  {/* Added container class */}
-      {/* Right Content Section */}
+    <div className="container"> 
       <div className="content-section">
         <h2 className="headings"><b>Building Areas and Prices</b></h2>
         <p>We specialize in high-quality construction projects tailored to your needs. Our offerings include:</p>

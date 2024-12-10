@@ -1,0 +1,79 @@
+.popup-icon-container {
+  position: fixed;
+  right: 10px;
+  bottom: 25%;
+  display: inline-block;
+}
+
+.popup-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: grey;
+}
+
+.popup-content {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: none;
+  border-radius: 20px; /* Rounded edges for the box */
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.popup-icon-container:hover .popup-content {
+  display: block;
+}
+
+/* Corner Arrow */
+.popup-content::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Positioning below the popup */
+  right: 20px; /* Adjust alignment for corner */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white; /* Arrow color matching the popup background */
+  z-index: 1001;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for arrow */
+}
+
+.popup-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #0078d4;
+}
+
+.popup-content p {
+  margin: 10px 0 5px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.popup-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Optional Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
